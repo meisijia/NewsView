@@ -71,6 +71,8 @@ public class MainActivity extends Activity {
 					connection.connect();
 
 					int responseCode = connection.getResponseCode();
+//可用okhttp优化
+                    Log.d("tag",  "okhttp");
 
 					if (responseCode == 200) {
 						// 读出来 流
